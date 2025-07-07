@@ -1,0 +1,30 @@
+.footer {
+  padding: 1rem;
+  background-color: #f7f9f9;
+  border-top: 1px solid #e1e8ed;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #536471;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.footer-links li {
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin: 0;
+}

@@ -1,0 +1,49 @@
+.compose-tweet {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom: 1px solid #e1e8ed;
+  background: white;
+  gap: 1rem;
+}
+
+.compose-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.compose-textarea {
+  
+  font-size: 1rem;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+  font-family: system-ui, sans-serif;
+  min-height: 80px;
+  width: 100%;
+}
+
+.compose-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.compose-footer button {
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.compose-footer button:disabled {
+  background: #a8d8f5;
+  cursor: not-allowed;
+}
