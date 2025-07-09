@@ -1,0 +1,11 @@
+section.home-container{
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll;
+    max-height: min-content; */
+    max-height: 80dvh;
+}
+#tuits-container{
+    overflow-y: scroll;
+    height: 100%;
+}

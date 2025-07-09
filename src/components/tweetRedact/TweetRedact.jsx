@@ -2,7 +2,7 @@ import "./TweetRedact.css"
 import { useState } from "react";
 
 function TweetRedact(props){
-    const {onTweet} = props;
+    const {onTuit,session} = props;
 
     const [text, setText] = useState('');
 
@@ -12,23 +12,19 @@ function TweetRedact(props){
 
         const newTweet = {
         id: crypto.randomUUID(), 
-        user: {
-            name: "Saul Dev",
-            handle: "s4uldev",
-            avatar: "https://i.pravatar.cc/100?img=12"
-        },
+        user: session,
         content: text,
         image: null,
         timestamp: "Ahora"
         };
 
-        onTweet(newTweet);
+        onTuit(newTweet);
         setText('');
     }
 
     return(<>
     <form className="compose-tweet" onSubmit={handleSubmit}>
-      <img src="https://i.pravatar.cc/100?img=12" alt="avatar" className="compose-avatar" />
+      <img src={session.avatar} alt="avatar" className="compose-avatar" />
       <textarea 
         type=""
         className="compose-textarea"
