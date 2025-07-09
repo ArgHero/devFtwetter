@@ -13,7 +13,7 @@ function NavBar(props){
 
     return(<>
         <nav className="navbar">
-            <div className="logo"><img src="src\assets\twetter.svg" alt="logo"  /></div>
+            <div className="logo"><img src="src/assets/twetter.svg" alt="logo"  /></div>
             <ul className="nav-menu">
                 {menuItems.map((item, index) => (
                 <li key={index} className="nav-item" onClick={()=>{navigate(item.route)}}>
